@@ -44,6 +44,27 @@ cd <your-repo>
 code .
 ```
 
+### Deploy to Netlify
+
+You can deploy this static site in a few clicks:
+
+1. Push your project to GitHub/GitLab/Bitbucket
+2. Sign in to [Netlify](https://www.netlify.com/)
+3. New site → Import from Git
+4. Select your repository
+5. Build settings:
+   - Build command: (leave empty — this is a static site)
+   - Publish directory: `.` or the folder that contains `index.html`
+6. Deploy
+
+Alternative (drag & drop):
+
+1. Run `zip` on the project folder (including `index.html`, `app.css`, `assets/`)
+2. Go to Netlify → Sites → "Deploy site by dragging and dropping your site folder"
+3. Drop the ZIP or the folder to upload
+
+Netlify will assign a URL like `https://your-site-name.netlify.app`. You can rename the site from Site settings → Site details.
+
 ### Key features
 
 - Responsive hero with circular accent and centered figure
